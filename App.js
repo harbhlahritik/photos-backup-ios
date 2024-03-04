@@ -1,11 +1,10 @@
-import { StatusBar } from "expo-status-bar";
-import { SafeAreaView, StyleSheet, Text, TextInput, View } from "react-native";
-import { LinearGradient } from "expo-linear-gradient";
 import { useFonts } from "expo-font";
+import { LinearGradient } from "expo-linear-gradient";
 import * as SplashScreen from "expo-splash-screen";
+import { StatusBar } from "expo-status-bar";
 import { useCallback } from "react";
-import CustomRegularText from "./src/components/CustomRegularText";
-import OpeningScreen from "./src/OpeningScreen";
+import { SafeAreaView, StyleSheet } from "react-native";
+import OpeningScreen from "./app/OpeningScreen";
 
 export default function App() {
   const [fontsLoaded, fontError] = useFonts({

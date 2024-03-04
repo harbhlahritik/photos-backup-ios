@@ -11,7 +11,10 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "scheme": "your-app-scheme",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -28,8 +31,30 @@
       [
         "expo-font",
         {
-          "fonts": ["./assets/fonts/Formula1-Black.ttf", "./assets/fonts/Formula1-Bold_web.ttf", "./assets/fonts/Formula1-Bold-4.ttf", "./assets/fonts/Formula1-Italic.ttf", "./assets/fonts/Formula1-Regular.ttf", "./assets/fonts/Formula1-Wide.ttf",
-        "./assets/fonts/Montserrat-Regular.ttf"]
+          "fonts": [
+            "./assets/fonts/Formula1-Black.ttf",
+            "./assets/fonts/Formula1-Bold_web.ttf",
+            "./assets/fonts/Formula1-Bold-4.ttf",
+            "./assets/fonts/Formula1-Italic.ttf",
+            "./assets/fonts/Formula1-Regular.ttf",
+            "./assets/fonts/Formula1-Wide.ttf",
+            "./assets/fonts/Montserrat-Regular.ttf"
+          ]
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to access your photos.",
+          "savePhotosPermission": "Allow $(PRODUCT_NAME) to save photos.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ],
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you sync them with your self hosted server."
         }
       ]
     ]

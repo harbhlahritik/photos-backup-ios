@@ -4,7 +4,7 @@ import CustomRegularText from "./CustomRegularText";
 
 export default function FullSizeButton(props) {
   return (
-    <TouchableOpacity onPress={props.onPress} color="#fff" style={{ ...styles.button, ...props.style }}>
+    <TouchableOpacity onPress={props.onPress} disabled={props.disabled} color="#fff" style={{ ...styles.button, backgroundColor: props.disabled ? "#555555" : "#5E5CE6", ...props.style }}>
       <CustomRegularText style={styles.text}>{props.children}</CustomRegularText>
     </TouchableOpacity>
   );
