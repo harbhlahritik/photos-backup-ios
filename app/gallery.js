@@ -1,6 +1,6 @@
 import * as MediaLibrary from "expo-media-library";
 import React, { useEffect } from "react";
-import { ActivityIndicator, FlatList, Image, StyleSheet, View } from "react-native";
+import { ActivityIndicator, Button, FlatList, Image, StyleSheet, View } from "react-native";
 import StyledText from "../src/components/StyledText";
 import useMergeState from "../src/customHooks/mergeState";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -149,6 +149,7 @@ export default function gallery() {
         numColumns={5}
         style={{ flex: 1 }}
       />
+      <Button title="clear" onPress={() => AsyncStorage.clear()}></Button>
     </View>
   );
 }
